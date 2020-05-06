@@ -1,0 +1,44 @@
+#navbar {
+    position: absolute;
+    left: 0px;
+    height: 40px;
+    background-color: #2C64B4;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#navbar ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+#navbar ul li {
+    margin: 0;
+    padding: 0;
+    float:left;
+}
+#navbar ul li a {
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    color: #FFF;
+    text-align: center;
+}
+
+.requestnow {
+  text-transform: uppercase;
+}
+
+.requestnow a {
+  background-color: #e89b17;
+  text-decoration: none;
+  color: #fafafa;
+  padding: 1em 1.5em;
+  box-shadow: 0 5px 0 #a86b02;
+}
+
+.requestnow a:hover {
+  background-color: #cf870c;
+}
+
+#mapid { height: 400px; }
