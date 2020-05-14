@@ -7,3 +7,4 @@ deploy:
   bucket: earsaverproject.com
   skip_cleanup: true
   region: us-east-1
+  local_dir: public
