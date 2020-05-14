@@ -1,6 +1,6 @@
 language: python
 python:
-- "3.7
+- "3.7"
 deploy:
   provider: s3
   access_key_id: AKIATRPN7XSBQGEFOQ2I
