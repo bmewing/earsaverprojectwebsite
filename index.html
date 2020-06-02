@@ -25,6 +25,7 @@
 	</head>
 	<body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <a class="navbar-brand mobile d-none" href="/">Ear Saver Project</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -39,33 +40,27 @@
         </ul>
       </div>
     </nav>
-		<div><br/><br/><br/></div>
-		<div class="body" style="width: 75%; text-align: center; padding:10px; margin: 0 auto;">
-			<h1>Ear Saver Project</h1>
-      <p>
-        <strong>To request your free ear savers...</strong>
-      </p>
-      <div class="requestnow" >
-        <a href="request.html">Click Here!</a>
-      </div>
-      <br /><br />
-      <table>
-        <tr>
-          <td>
-            <img src="images/ear_saver_project.png" height="300px"/>
-          </td>
-          <td>
+		<div class="body mt-5" style="width: 75%; padding:10px; margin: 0 auto;">
+			<h1 class="display-3 sr-only">Ear Saver Project</h1>
+      <div class="row mb-5">
+        <div class="col-lg-4">
+            <img src="images/ear_saver_project.png" alt="ear saver project logo" />
+        </div>
+        <div class="col-lg-6">
+
             <p>We are a group of <strong>volunteers across the US</strong> including the Volunteer State
         working to equip front-line medical professionals with 3D printed resources to improve their
         quality of life during this unprecedented pandemic at <strong>no cost to them</strong>.</p>
       <p>As of May 2020, we have delivered approximately $12,000 worth of ear savers to 100+
       different hospitals and medical offices across 17 states!</p>
-          </td>
-        </tr>
-      </table>
+          <div class="requestnow mt-5">
+            <a href="request.html">Request Free Ear Savers</a>
+          </div>
+        </div>
+      </div>
 
 			<h2>Where Have Ear Savers Been Delivered</h2>
-			<div id="mapid"></div>
+			<div id="mapid" class="mb-5"></div>
       <script>
 
         let mymap = L.map('mapid').setView([50, -100], 3);

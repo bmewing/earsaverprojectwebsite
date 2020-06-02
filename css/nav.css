@@ -60,3 +60,16 @@
 }
 
 #mapid { height: 400px; }
+
+img{
+  max-width: 100%;
+}
+
+@media screen and (max-width: 991px){
+  .navbar-brand.mobile{
+    display: block!important;
+  }
+  .navbar-brand{
+    display: none!important;
+  }
+}
