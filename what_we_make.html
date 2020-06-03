@@ -8,30 +8,65 @@
     <link rel="manifest" href="/site.webmanifest">
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#ffc40d">
-    <meta name="theme-color" content="#ffffff">
+	<meta name="theme-color" content="#ffffff">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 		<link rel='stylesheet' type='text/css' href='css/nav.css'>
+		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+		integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+		crossorigin=""/>
+		<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+		integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+		crossorigin=""></script>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	</head>
 	<body>
-		<div id='navbar'>
-			<ul>
-        <li><a href="index.html">About</a></li>
-				<li><a href="request.html">Submit Request</a></li>
-				<li><a href="volunteer.html">Volunteer</a></li>
-				<li><a href="#">Products</a></li>
-				<li><a href="faq.html">FAQ</a></li>
-				<li><a href="contact.html">Contact</a></li>
-			</ul>
-		</div>
+		<nav class="navbar navbar-expand-lg sticky-top">
+			<a class='navbar-brand' href='index.html'>Ear Saver Project</a>
+			<button class='navbar-toggler navbar-dark' type='button' data-toggle='collapse' data-target='#main-navigation'> <!--Denotes the toggle button for a collapsed menu-->
+			  <span class='navbar-toggler-icon'></span> <!--Icon users click on when the menu opens on smaller screens-->
+			</button>
+			<div class="collapse navbar-collapse" id="main-navigation">
+			  <ul class="navbar-nav">
+				<li class="nav-item"><a class="nav-link" href="index.html">About </a></li>
+				<li class="nav-item"><a class="nav-link" href="request.html">Submit Request </a></li>
+				<li class="nav-item"><a class="nav-link" href="volunteer.html">Volunteer </a></li>
+				<li class="nav-item"><a class="nav-link" href="#">Products </a></li>
+				<li class="nav-item"><a class="nav-link" href="faq.html">FAQ </a></li>
+				<li class="nav-item"><a class="nav-link" href="contact.html">Contact </a></li>
+			  </ul>
+			</div>
+		</nav>
 		<div><br/><br/><br/></div>
-		<div class="body" style="width: 50%; text-align: center; padding:10px; margin: 0 auto;">
-			<h1>What Are You Making?</h1>
-			<iframe width="560" height="315" src="https://www.youtube.com/embed/jZgcnKsWxEM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-			<p>We are 3D printing devices to secure elastic earbands behind the head without digging into ears from PLA and PETG plastic filament.</p>
-			<p>The file we're using is freely available on <a href="https://www.thingiverse.com/thing:4249113" target="blank">Thingiverse</a> and was created by Suraky. This particular design has been reviewed and approved by the <a href="https://3dprint.nih.gov/discover/3dpx-013410" target="blank">US National Institute of Health</a>.</p>
-			<p>This design was made popular by Quinn Callander, a scout in Canada who began printing and distributing them in his area. Across the world, tens of thousands of these have been printed and shared with the heroes working on the frontline to fight this pandemic.</p>
-      <h1>How do I wear an Ear Saver?</h1>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/1Qt1CT1ytAI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<div class="body" style="width: 50%; text-align: center; padding:10px; margin: 0 auto; ">
+			<div class="row">
+				<p id="intropara1">We are 3D printing devices to secure elastic earbands behind the head without digging into ears from PLA and PETG plastic filament.</p>
+				<p id="intropara2">The file we're using is freely available on <a href="https://www.thingiverse.com/thing:4249113" target="blank">Thingiverse</a> and was created by Suraky. This particular design has been reviewed and approved by the <a href="https://3dprint.nih.gov/discover/3dpx-013410" target="blank">US National Institute of Health</a>.</p>
+				<p id="intropara3">This design was made popular by Quinn Callander, a scout in Canada who began printing and distributing them in his area. Across the world, tens of thousands of these have been printed and shared with the heroes working on the frontline to fight this pandemic.</p>
+			</div>
+
+			<div class="row">
+				<div class="col-lg-6 col-md-6 col-sm-12">
+					<h1 id="making">What Are You Making?</h1>
+					<div class="embed-responsive embed-responsive-16by9">
+						<iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/jZgcnKsWxEM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"  allowfullscreen></iframe>
+					</div>
+					
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-12">
+					<h1>How do I wear an Ear Saver?</h1>
+					<div class="embed-responsive embed-responsive-16by9">
+						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/1Qt1CT1ytAI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+				</div>
+			</div>
+
+			
 		</div>
+			
+		
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 	</body>
 </index>

@@ -1,28 +1,54 @@
-#navbar {
-    position: absolute;
-    left: 0px;
-    height: 40px;
-    background-color: #2C64B4;
-    width: 100%;
-    display: flex;
-    justify-content: center;
+
+
+.body h1{
+  font-family: "Lucida Console" Monaco, monospace;
 }
-#navbar ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
+
+.features {
+  margin: 4em auto;
+  padding: 1em;
+  position: relative;
 }
-#navbar ul li {
-    margin: 0;
-    padding: 0;
-    float:left;
+.features img {
+  -webkit-box-shadow: 1px 1px 4px rgba(255,165,0, 0.6);
+  -moz-box-shadow: 1px 1px 4px rgba(255,165,0, 0.6);
+  box-shadow: 1px 1px 4px rgba(255,165,0, 0.6);
+  margin-bottom: 16px;
 }
-#navbar ul li a {
-    text-decoration: none;
-    padding: 10px 20px;
-    display: block;
-    color: #FFF;
-    text-align: center;
+.footer-copyright{
+  font-size: 0.7em;
+}
+
+.navbar{
+  background:	#2C64B4;
+}
+.navbar-collapse{
+  justify-content: flex-end;
+  background-color: #2C64B4;
+}
+.nav-link {
+  margin-right: 1em !important;
+}
+.nav-link,
+.navbar-brand{
+  color: #FFF;
+  cursor: pointer;
+}
+.navbar-brand:hover{
+  color:	#32CD32;
+}
+.nav-link:hover{
+  color:	#32CD32;
+}
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.navbar ul li {
+  margin: 0;
+  padding: 0;
+  float:left;
 }
 
 .requestnow {
@@ -33,7 +59,7 @@
   background-color: #e89b17;
   text-decoration: none;
   color: #fafafa;
-  padding: 1em 1.5em;
+  padding: 1em 2em;
   box-shadow: 0 5px 0 #a86b02;
 }
 
@@ -42,3 +68,73 @@
 }
 
 #mapid { height: 400px; }
+
+@media (max-width: 575.98px) {
+  
+  .container-fluid h2{
+    margin-top: 4em;
+  }
+  .col-sm-12 p{
+    font-size: 1.1em;
+  }
+  .features{
+    margin-top: 0;
+  }
+
+
+}
+@media (min-width: 767.98px){
+  .col-md-8 p{
+    font-size: 1.2em;
+  }
+  .col-md-4 img{
+    margin-top: 5em;
+  }
+  .container-fluid h2{
+    margin-top:3em;
+  }
+  .features{
+    margin-top: 0;
+  }
+  .col-md-6 #making{
+    margin-top: 0.6em;
+    padding-bottom: 0.6em;
+  }
+}
+@media (min-width: 1023.98px){
+  .col-lg-8 p{
+    margin-top: 0;
+  }
+  .col-lg-4 img{
+    margin-top: 0;
+
+  }
+  .features{
+    margin-top: 0;
+  }
+  .col-lg-6 #making{
+    margin-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+@media (min-width: 1439.98px){
+  .col-lg-8 p{
+    margin-top: 2em;
+    font-size: 1.3em;
+  }
+  .features{
+    margin-top: 1em;
+  }
+  .col-md-6 #making{
+    margin-top: 0;
+    padding-bottom: 0;
+  }
+  #intropara1,#intropara2,
+  #intropara3{
+    font-size: 1.3em;
+  }
+  
+}
+
+
