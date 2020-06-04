@@ -59,8 +59,9 @@
               quality of life during this unprecedented pandemic at <strong>no cost to them</strong>.
             </p>
             <p>
-              As of June 2020, we have delivered approximately $20,000 worth of ear savers to 100+
-              different hospitals, medical offices and other essential services across 17 states!
+              As of June 2020, we have delivered approximately $<span id="value_delivered"></span>
+              worth of ear savers to <span id="locations_delivered"></span>+ different hospitals,
+              medical offices and other essential services across <span id="state_count"></span> states!
             </p>
           </div>
         </div>
@@ -87,68 +88,7 @@
 
 			  <h2>Where Have Ear Savers Been Delivered</h2>
 			  <div id="mapid"></div>
-        <script>
-
-          let mymap = L.map('mapid').setView([50, -100], 3);
-
-          L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?' +
-            'access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
-            maxZoom: 18,
-            attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
-              '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
-              'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-            id: 'mapbox/streets-v11',
-            tileSize: 512,
-            zoomOffset: -1
-          }).addTo(mymap);
-
-          L.marker([61.21, -149.83]).addTo(mymap).bindPopup("Alaska Regional Hospital, Anchorage, AK");
-
-          L.marker([30.59, -87.26]).addTo(mymap).bindPopup("Santa Rosa Medical Center, Pace, FL");
-          L.marker([30.47, -87.23]).addTo(mymap).bindPopup("Gulf Coast Health Care and Baptist Medical Park, Pensacola, FL");
-
-          L.marker([39.79, -86.16]).addTo(mymap).bindPopup("IU Health Methodist, Indianapolis, IN");
-
-          L.marker([34.26, -85.18]).addTo(mymap).bindPopup("Riverwood Senior Living, Rome, GA");
-
-          L.marker([42.11, -72.61]).addTo(mymap).bindPopup("Various, Springfield, MA");
-
-          L.marker([42.39, -83.28]).addTo(mymap).bindPopup("Various, Detroit, MI");
-
-          L.marker([31.68, -88.65]).addTo(mymap).bindPopup("Gulf Coast Health Care, Waynesboro, MS");
-
-          L.marker([48.20, -114.33]).addTo(mymap).bindPopup("Prestige Senior Living, Kalispell, MT");
-
-          L.marker([35.58, -82.55]).addTo(mymap).bindPopup("Mission Hospital, Asheville, NC");
-          L.marker([35.74, -81.71]).addTo(mymap).bindPopup("Various, Morganton, NC");
-          L.marker([35.84, -78.78]).addTo(mymap).bindPopup("Various, Raleigh, NC");
-
-          L.marker([41.09, -73.93]).addTo(mymap).bindPopup("Nyack Hospital, Orangetown, NY");
-
-          L.marker([44.08, -123.03]).addTo(mymap).bindPopup("Various, Springfield, OR");
-
-          L.marker([36.55, -82.25]).addTo(mymap).bindPopup("Several including Ballad Health, Tri-Cities, TN");
-          L.marker([36.15, -86.81]).addTo(mymap).bindPopup("TriStar Centennial Medical Center, Nashville, TN");
-          L.marker([35.94, -84.07]).addTo(mymap).bindPopup("Parkwest Hospital, Knoxville, TN");
-
-          L.marker([32.16, -94.80]).addTo(mymap).bindPopup("Various, Henderson, TX");
-          L.marker([32.53, -94.81]).addTo(mymap).bindPopup("Pine Tree Lodge Nursing Home, Longview, TX");
-          L.marker([32.57, -94.50]).addTo(mymap).bindPopup("Christus Good Shephard, Marshall, TX");
-
-        L.marker([40.77, -111.84]).addTo(mymap).bindPopup("University of Utah Medical Center, Salt Lake City, UT");
-
-        L.marker([38.03, -78.51]).addTo(mymap).bindPopup("University of Virginia, Charlottesville, VA");
-        L.marker([37.26, -79.95]).addTo(mymap).bindPopup("Carilion OBGYN, Roanoke, VA");
-        L.marker([36.98, -82.59]).addTo(mymap).bindPopup("Wise County and City of Norton Health Department, Wise, VA");
-
-          L.marker([47.05, -122.85]).addTo(mymap).bindPopup("Providence St. Peter Hospital, Olympia, WA");
-
-          L.marker([43.19, -89.41]).addTo(mymap).bindPopup("Various, Madison, WI");
-
-          var popup = L.popup();
-
-
-        </script>
+        <script src="map.js"></script>
       </div>
       <footer class="page-footer">
         <div class="footer-copyright text-center" >Site Designer and Developer: <a href="https://linkedin.com/in/amanda-tolman-852b13174/">Amanda Tolman</a></div>
@@ -157,5 +97,6 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="get_count.js"></script>
 	</body>
 </index>
