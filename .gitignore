@@ -6,3 +6,5 @@
 .htaccess
 .DS_Store
 .editorconfig
+
+data/*

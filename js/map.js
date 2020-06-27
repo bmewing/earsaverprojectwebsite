@@ -14,7 +14,7 @@ function loadMapData()
             map_content = textfile.responseText;
         }
     }
-    textfile.open("GET", "https://docs.google.com/spreadsheets/d/1KN6tj0Q_L4KU65oRcFO6pFaPspACkLK3Fi2SOreg1F4/export?format=csv&gid=521629865", false);
+    textfile.open("GET", "http://earsaverproject.com/data/map_data.csv", false);
     textfile.send();
 }
 loadMapData();
