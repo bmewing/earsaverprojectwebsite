@@ -34,3 +34,14 @@ function loadTotalCount()
     textfile.send();
 }
 loadTotalCount();
+
+function setDate()
+{
+  let objToday = new Date();
+  let months = ['January', 'February', 'March', 'April', 'May', 'June', 'July',
+                'August', 'September', 'October', 'November', 'December'];
+	let curMonth = months[objToday.getMonth()];
+	let curYear = objToday.getFullYear();
+  document.getElementById("date").innerText = curMonth + ", " + curYear;
+}
+setDate();
