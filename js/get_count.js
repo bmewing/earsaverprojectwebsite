@@ -9,7 +9,7 @@ function numberWithCommas(x) {
 }
 
 function processAndDisplay(content) {
-  content = content[1].split(',');
+  content = content.split('\n')[1].split(',');
   document.getElementById("value_delivered").innerText = "$"+numberWithCommas(Math.roundTo(content[0] *= 1, 1000));
   document.getElementById("locations_delivered").innerText = numberWithCommas(Math.roundTo(content[1] *= 1, 10)) + "+";
   document.getElementById("state_count").innerText = content[2];

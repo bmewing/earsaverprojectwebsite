@@ -36,8 +36,9 @@ L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?' +
 }).addTo(mymap);
 
 let this_marker;
-for (let i = 1; i < map_content.length; i++){
+for (let i = 1; i < map_content.length-1; i++){
   this_marker = map_content[i].split(',')
+  console.log(this_marker)
   L.marker([this_marker[0], this_marker[1]]).addTo(mymap).bindPopup(this_marker[2]+', '+this_marker[3]+', '+this_marker[4])
 }
 
